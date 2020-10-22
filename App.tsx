@@ -3,8 +3,13 @@ import React from 'react';
 import {Dimensions, StyleProp, StyleSheet} from 'react-native';
 
 const MAPBOX_TOKEN = '';
-const MAPBOX_STYLE = '';
 const CHARGETRIP_CLIENT_ID = '';
+
+/**
+ * This Mapbox style is available for all example applications created by Chargetrip. 
+ * It contains the icon and cluster assets and follows the naming convention of 'iconImage' in mapStyles.
+ */
+const MAPBOX_STYLE = 'mapbox://styles/chargetrip/ckgcbf3kz0h8819qki8uwhe0k';
 
 MapboxGL.setAccessToken(MAPBOX_TOKEN);
 MapboxGL.addCustomHeader('x-client-id', CHARGETRIP_CLIENT_ID);
